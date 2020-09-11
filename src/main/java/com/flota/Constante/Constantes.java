@@ -1,7 +1,7 @@
 package com.flota.Constante;
 
 public class Constantes {
-    public static enum Licencia{
+    public enum Licencia{
         B,
         C,
         D;

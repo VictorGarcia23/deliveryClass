@@ -8,4 +8,7 @@ public class Paquete {
         this.nombre = nombre;
 
     }
+    public String getNombre(){
+        return nombre;
+    }
 }

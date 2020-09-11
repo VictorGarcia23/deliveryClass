@@ -5,12 +5,18 @@ import java.util.List;
 
 public class Ruta {
 
-    private List<Parada>paradas = new ArrayList<Parada>(10);
-        public void meterPaquete(Parada parada){
-            this.paradas.add(parada);
+    private List<Parada> paradas = new ArrayList<Parada>();
 
-        }
-    public Ruta (Paquete paquete){
+    public void meterPaquete(Parada parada) {
+        this.paradas.add(parada);
 
+    }
+
+    public Ruta(Parada parada) {
+
+    }
+
+    public List<Parada> getParadas() {
+        return paradas;
     }
 }

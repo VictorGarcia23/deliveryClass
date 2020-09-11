@@ -4,13 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Parada {
-    private List<Paquete> paquetesCamion =  new ArrayList<Paquete>(10);
+    private List<Paquete> paquetesParada =  new ArrayList<Paquete>();
 
-    public void meterPaquetesCamion(Paquete paquetesCamion){
-        this.paquetesCamion.add(paquetesCamion);
+    public void meterPaquetesParada(Paquete paquete){
+        this.paquetesParada.add(paquete);
     }
 
-    public Parada(Ruta ruta){
+    public Parada(List<Paquete> paquetesParada){
+        this.paquetesParada = paquetesParada;
 
+    }
+    public List<Paquete> getPaquetesParada(){
+
+        return paquetesParada;
     }
 }
